@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="_A_Little_About_Me" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="A Little About..." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="plu-QK-M6s">
+                                <rect key="frame" x="25" y="60" width="364" height="42.5"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="35"/>
+                                <color key="textColor" red="0.32369780539999998" green="0.1063579395" blue="0.574860394" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" red="0.47684186699999997" green="0.50480759139999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <size key="shadowOffset" width="3" height="-2"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A8Z-XX-Ppd">
+                                <rect key="frame" x="110" y="103" width="194" height="33"/>
+                                <color key="backgroundColor" red="0.9533458463662946" green="0.96851998567581177" blue="0.85386053994944566" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" name="KohinoorDevanagari-Light" family="Kohinoor Devanagari" pointSize="15"/>
+                                <state key="normal" title="click here to find out who!">
+                                    <color key="titleColor" systemColor="labelColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="changeNameButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0vG-TI-X67"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1QS-q6-Fl0">
+                                <rect key="frame" x="160" y="207" width="94" height="53"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="AvenirNextCondensed-DemiBold" family="Avenir Next Condensed" pointSize="30"/>
+                                <state key="normal" title="Hobbies">
+                                    <color key="titleColor" red="0.47684186699999997" green="0.50480759139999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="hobbiesButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rmN-RK-FPh"/>
+                                    <segue destination="C1r-f0-WyD" kind="show" id="fgU-9v-1u9"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kpG-Oe-0z6">
+                                <rect key="frame" x="168" y="294" width="78" height="53"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="AvenirNextCondensed-DemiBold" family="Avenir Next Condensed" pointSize="30"/>
+                                <state key="normal" title="Travels">
+                                    <color key="titleColor" red="0.47684186699999997" green="0.50480759139999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="storyButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="L0q-8E-oZe"/>
+                                    <segue destination="8RT-ba-AJD" kind="showDetail" id="T6g-Ky-sE1"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yd6-LE-wb0">
+                                <rect key="frame" x="174" y="389" width="67" height="53"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="AvenirNextCondensed-DemiBold" family="Avenir Next Condensed" pointSize="30"/>
+                                <state key="normal" title="Music">
+                                    <color key="titleColor" red="0.47684186699999997" green="0.50480759139999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="musicButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Qjv-mk-4pE"/>
+                                    <segue destination="lz2-qf-0Dc" kind="show" id="hnW-Xj-NMG"/>
+                                </connections>
+                            </button>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mxM-XC-TMW">
+                                <rect key="frame" x="377" y="44" width="17" height="818"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <viewLayoutGuide key="contentLayoutGuide" id="9OJ-KS-FYA"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="RVv-wj-SYX"/>
+                            </scrollView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="👋🏻" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hKM-Rs-0cY">
+                                <rect key="frame" x="150" y="103" width="114" height="60"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="50"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="music image" translatesAutoresizingMaskIntoConstraints="NO" id="n19-2P-qfE">
+                                <rect key="frame" x="0.0" y="415" width="600" height="447"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" red="0.78823529411764703" green="0.80392156862745101" blue="0.94509803921568625" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="plu-QK-M6s" secondAttribute="trailing" constant="25" id="KSY-5M-htl"/>
+                            <constraint firstItem="plu-QK-M6s" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="25" id="Lhp-Fz-zjS"/>
+                            <constraint firstItem="hKM-Rs-0cY" firstAttribute="top" secondItem="plu-QK-M6s" secondAttribute="bottom" constant="0.5" id="Thi-kI-BYl"/>
+                            <constraint firstItem="A8Z-XX-Ppd" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="110" id="bNN-yD-KKK"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="hKM-Rs-0cY" secondAttribute="trailing" constant="150" id="gxD-8U-QO5"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="A8Z-XX-Ppd" secondAttribute="trailing" constant="110" id="kCm-eq-lp3"/>
+                            <constraint firstItem="plu-QK-M6s" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="60" id="mYO-rm-VVJ"/>
+                            <constraint firstItem="A8Z-XX-Ppd" firstAttribute="top" secondItem="plu-QK-M6s" secondAttribute="bottom" constant="0.5" id="qDu-hD-bz0"/>
+                            <constraint firstItem="hKM-Rs-0cY" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="150" id="qvK-ZL-vvd"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="94L-Q1-pb3"/>
+                    <connections>
+                        <outlet property="hobbiesImage" destination="gHK-VN-7K9" id="5Nb-TJ-dSn"/>
+                        <outlet property="musicImage" destination="n19-2P-qfE" id="Zvh-6h-a5m"/>
+                        <outlet property="nameLabel" destination="plu-QK-M6s" id="2Bn-kH-n4X"/>
+                        <outlet property="wavingEmoji" destination="hKM-Rs-0cY" id="3mn-aK-TRu"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="18.840579710144929" y="77.678571428571431"/>
+        </scene>
+        <!--Second View Controller-->
+        <scene sceneID="8id-LK-od4">
+            <objects>
+                <viewController id="C1r-f0-WyD" customClass="secondViewController" customModule="_A_Little_About_Me" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="VyR-3u-J17">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3bL-Ey-cZs">
+                                <rect key="frame" x="160" y="49" width="94" height="53"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="AvenirNextCondensed-DemiBold" family="Avenir Next Condensed" pointSize="30"/>
+                                <state key="normal" title="Hobbies">
+                                    <color key="titleColor" red="0.47684186699999997" green="0.50480759139999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="hobbiesButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Q4o-cO-N9x"/>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="ZUY-Fq-H1Z"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="hobbies image" translatesAutoresizingMaskIntoConstraints="NO" id="gHK-VN-7K9">
+                                <rect key="frame" x="20" y="110" width="372" height="171"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" lineBreakMode="tailTruncation" numberOfLines="15" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C5E-uh-KJY">
+                                <rect key="frame" x="23" y="289" width="369" height="506"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <string key="text">Loves &amp; Likes
+
+- READING
+- Journaling
+- Coding
+- Making lists
+- Colors
+- Graphic design
+- Personality quizzes
+- Smelling fresh, unlit candles
+- Riddles + brain teasers + puzzles
+- Doodling 
+</string>
+                                <fontDescription key="fontDescription" name="KohinoorDevanagari-Light" family="Kohinoor Devanagari" pointSize="25"/>
+                                <color key="textColor" red="0.0048598507420000003" green="0.096086271109999996" blue="0.57499289509999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="4SL-jz-UCZ"/>
+                        <color key="backgroundColor" red="0.78823529410000004" green="0.80392156859999997" blue="0.94509803920000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="euU-Uu-9r6"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CMB-fj-ZeZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="760.86956521739137" y="77.678571428571431"/>
+        </scene>
+        <!--Third View Controller-->
+        <scene sceneID="Rxo-eI-onn">
+            <objects>
+                <viewController id="8RT-ba-AJD" customClass="thirdViewController" customModule="_A_Little_About_Me" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="LzP-SY-qZO">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" lineBreakMode="tailTruncation" numberOfLines="25" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lE0-aF-k03">
+                                <rect key="frame" x="20" y="115" width="374" height="693"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <mutableString key="text">Disclaimer: this is a list of places that I want to travel to because I haven’t actually been (um duh)… but maybe one day….
+1. Hogwarts (hArrY pOttEr 😳)
+2. Cornucopia (The Ickabog 🌾)
+3. basically all the grand buildings in the Prada series🍸
+4. Camp Jupiter (The Heroes of Olympus 🏟)
+5. Camp Halfblood (Percy Jackson and the Olympians 🪨)
+6. Prince Edward Island and Anne’s house in Avonlea (Anne of Green Gables 🌳)
+7. Fairyland (Rainbow Magic series ✨)
+8. Bayern (The Books of Bayern 🥰)
+9. Wonderland (Alice’s Adventures in Wonderland 😶‍🌫️)
+10. Boston at the time of Little Women 🏠
+</mutableString>
+                                <fontDescription key="fontDescription" name="KohinoorDevanagari-Light" family="Kohinoor Devanagari" pointSize="22"/>
+                                <color key="textColor" red="0.0048598507420000003" green="0.096086271109999996" blue="0.57499289509999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vKq-O6-tM0">
+                                <rect key="frame" x="168" y="54" width="78" height="53"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="AvenirNextCondensed-DemiBold" family="Avenir Next Condensed" pointSize="30"/>
+                                <state key="normal" title="Travels">
+                                    <color key="titleColor" red="0.47684186699999997" green="0.50480759139999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="storyButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0bK-fl-XdX"/>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="njK-VR-7NV"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="ngj-dO-HOs"/>
+                        <color key="backgroundColor" red="0.78823529410000004" green="0.80392156859999997" blue="0.94509803920000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ql5-8V-BF5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1462.3188405797102" y="77.678571428571431"/>
+        </scene>
+        <!--Fourth View Controller-->
+        <scene sceneID="f5o-3m-vhl">
+            <objects>
+                <viewController id="lz2-qf-0Dc" customClass="fourthViewController" customModule="_A_Little_About_Me" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="RFf-vH-8or">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ms1-zb-hFu">
+                                <rect key="frame" x="174" y="45" width="67" height="53"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="AvenirNextCondensed-DemiBold" family="Avenir Next Condensed" pointSize="30"/>
+                                <state key="normal" title="Music">
+                                    <color key="titleColor" red="0.47684186699999997" green="0.50480759139999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="musicButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="GV4-fl-j9h"/>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="rBU-ci-wEe"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" lineBreakMode="tailTruncation" numberOfLines="15" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jgn-iV-ApU">
+                                <rect key="frame" x="23" y="106" width="369" height="372"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <string key="text">Artists (in no order… except Taylor, of course)
+
+- Taylor Swift
+- Selena Gomez
+- Ariana Grande
+- Loren Gray
+- 1D
+- Olivia Rodrigo
+and more...
+
+Top Tracks (really no order this time)</string>
+                                <fontDescription key="fontDescription" name="KohinoorDevanagari-Light" family="Kohinoor Devanagari" pointSize="22"/>
+                                <color key="textColor" red="0.0048598507420000003" green="0.096086271109999996" blue="0.57499289509999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="music_high school musical" translatesAutoresizingMaskIntoConstraints="NO" id="6bp-W1-mha">
+                                <rect key="frame" x="60" y="486" width="98" height="132"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="music_hamilton" translatesAutoresizingMaskIntoConstraints="NO" id="f8v-s2-0SX">
+                                <rect key="frame" x="255" y="486" width="99" height="132"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="sing" translatesAutoresizingMaskIntoConstraints="NO" id="77I-Ad-hYj">
+                                <rect key="frame" x="60" y="676" width="97" height="132"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="the greatest showman" translatesAutoresizingMaskIntoConstraints="NO" id="UyA-4c-nLQ">
+                                <rect key="frame" x="255" y="676" width="99" height="132"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="3vx-rw-gLQ"/>
+                        <color key="backgroundColor" red="0.78823529410000004" green="0.80392156859999997" blue="0.94509803920000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="6eo-cJ-hS9"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6oX-jf-Nfq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2169.5652173913045" y="77.678571428571431"/>
+        </scene>
+    </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="ZUY-Fq-H1Z"/>
+    </inferredMetricsTieBreakers>
+    <resources>
+        <image name="hobbies image" width="800" height="534"/>
+        <image name="music image" width="960" height="719"/>
+        <image name="music_hamilton" width="267" height="373"/>
+        <image name="music_high school musical" width="1600" height="2370"/>
+        <image name="sing" width="1000" height="1482"/>
+        <image name="the greatest showman" width="1401" height="2048"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
